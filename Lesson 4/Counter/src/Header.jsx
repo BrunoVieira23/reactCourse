@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 function Header({ headercounter, handleDecrement, handleIncrement }) {
   return (
@@ -18,7 +18,7 @@ function Header({ headercounter, handleDecrement, handleIncrement }) {
         </svg>
         <span className="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">
           <button onClick={handleDecrement}>-</button>
-          you have <strong> {headercounter} </strong> unread messages.
+          <strong> {headercounter} </strong> messages
           <button onClick={handleIncrement}>+</button>
         </span>
       </span>

@@ -1,44 +1,114 @@
-.App {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.app-container {
+  height: 100vh;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.main-content {
+  display: flex;
+  height: calc(100% - 28px);
 }
 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+header {
+  width: 100%;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #667eea;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
 }
 
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+header .text-xl {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header svg {
+  width: 24px;
+  height: 24px;
+  fill: #667eea;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+header .relative {
+  position: relative;
 }
 
-.card {
-  padding: 2em;
+header .absolute {
+  position: absolute;
 }
 
-.read-the-docs {
-  color: #888;
+header .inline-flex {
+  display: inline-flex;
+}
+
+header .px-2 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+header .py-1 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+header .text-xs {
+  font-size: 0.75rem;
+}
+
+header .font-bold {
+  font-weight: bold;
+}
+
+header .leading-none {
+  line-height: 1;
+}
+
+header .bg-red-600 {
+  background-color: #dc2626;
+}
+
+header .rounded-full {
+  border-radius: 9999px;
+}
+
+header .text-red-100 {
+  color: #fff;
+}
+
+.sidebar {
+  width: 25%;
+  height: 100%;
+  border-right: 1px solid #667eea;
+  padding: 16px;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: bold;
+}
+
+.sidebar a {
+  color: #4b5563;
+  transition: color 0.3s;
+}
+
+.sidebar a:hover {
+  color: #1e3a8a;
+}
+
+.article {
+  flex: 1;
+  padding: 16px;
+}
+
+.footer {
+  height: 48px;
+  border-top: 1px solid #667eea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  color: #4b5563;
 }

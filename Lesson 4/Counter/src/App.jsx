@@ -2,30 +2,11 @@ import "./App.css";
 import Header from "./Header";
 import React, { useState } from "react";
 import Sidebar from "./Sidebar";
-
-function Article() {
-  return (
-    <article className="p-4">
-      Hello Visitor,
-      <br />
-      <br />
-      <br />
-      <br />
-      Please go to your inbox to read them.
-    </article>
-  );
-}
-
-function Footer() {
-  return (
-    <footer className="h-12 border-t border-slate-400 flex items-center px-4 text-sm text-slate-400">
-      by TMNT DEVelopment (2022)
-    </footer>
-  );
-}
+import Footer from "./Footer";
+import Article from "./Article";
 
 function App() {
-  const [counter, setCounter] = useState(64);
+  const [counter, setCounter] = useState(0);
 
   const handleIncrement = () => {
     setCounter(counter + 1);
